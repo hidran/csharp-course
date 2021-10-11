@@ -12,6 +12,7 @@ namespace f01_form
 {
     public partial class Form1 : Form
     {
+        string operation;
         public Form1()
         {
             InitializeComponent();
@@ -79,26 +80,20 @@ namespace f01_form
             {
                 double val1 = Convert.ToDouble(txtVal1.Text);
                 double val2 = Convert.ToDouble(txtVal2.Text);
-                if (rdbSum.Checked)
+                switch (operation)
                 {
-                    result = Somma(val1, val2);
-                }
-                else if (rdbMul.Checked)
-                {
-                    result = val1 * val2;
-                }
-                else if (rdbSub.Checked)
-                {
-                    result = val1 - val2;
-                }
-                else if (rdbDiv.Checked)
-                {
-                    result = val1 / val2;
-
-                }
-                else
-                {
-                    MessageBox.Show("scegliere operazione");
+                    case "*":
+                        result = val1 * val2;
+                        break;
+                    case "+":
+                        result = Somma(val1, val2);
+                        break;
+                    case "-":
+                        result = val1 - val2;
+                        break;
+                    case "/":
+                        result = val1 / val2;
+                        break;
                 }
                 txtResult.Text = result.ToString();
             }
@@ -115,6 +110,16 @@ namespace f01_form
                 MessageBox.Show($"Error di tipo {ex.GetType()} -messaggio  {  ex.Message}");
             }
         }
-        
+        private void ChooseOperation(object sender, EventArgs e)
+        {
+            operation = ((RadioButton)sender).Text;
+          
+        }
+
+        private void label1_Click(object sender, EventArgs e)
+        {
+
+        }
     }
+
 }

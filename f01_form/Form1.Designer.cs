@@ -30,13 +30,7 @@ namespace f01_form
         private void InitializeComponent()
         {
             this.components = new System.ComponentModel.Container();
-            this.button1 = new System.Windows.Forms.Button();
-            this.textBox1 = new System.Windows.Forms.TextBox();
             this.contextMenuStrip1 = new System.Windows.Forms.ContextMenuStrip(this.components);
-            this.value1 = new System.Windows.Forms.TextBox();
-            this.value2 = new System.Windows.Forms.TextBox();
-            this.result = new System.Windows.Forms.TextBox();
-            this.calculate = new System.Windows.Forms.Button();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
             this.execute = new System.Windows.Forms.Button();
             this.rdbDiv = new System.Windows.Forms.RadioButton();
@@ -47,29 +41,11 @@ namespace f01_form
             this.txtResult = new System.Windows.Forms.TextBox();
             this.txtVal2 = new System.Windows.Forms.TextBox();
             this.txtVal1 = new System.Windows.Forms.TextBox();
+            this.label1 = new System.Windows.Forms.Label();
+            this.label2 = new System.Windows.Forms.Label();
             this.groupBox1.SuspendLayout();
             this.operazioni.SuspendLayout();
             this.SuspendLayout();
-            // 
-            // button1
-            // 
-            this.button1.BackColor = System.Drawing.SystemColors.ActiveCaption;
-            this.button1.Location = new System.Drawing.Point(12, 12);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(192, 60);
-            this.button1.TabIndex = 0;
-            this.button1.Text = "button1";
-            this.button1.UseVisualStyleBackColor = false;
-            this.button1.Click += new System.EventHandler(this.sayHi);
-            this.button1.MouseEnter += new System.EventHandler(this.changeColor);
-            // 
-            // textBox1
-            // 
-            this.textBox1.Location = new System.Drawing.Point(12, 78);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(192, 22);
-            this.textBox1.TabIndex = 1;
-            this.textBox1.TextChanged += new System.EventHandler(this.textBox1_TextChanged);
             // 
             // contextMenuStrip1
             // 
@@ -77,49 +53,18 @@ namespace f01_form
             this.contextMenuStrip1.Name = "contextMenuStrip1";
             this.contextMenuStrip1.Size = new System.Drawing.Size(61, 4);
             // 
-            // value1
-            // 
-            this.value1.Location = new System.Drawing.Point(210, 12);
-            this.value1.Name = "value1";
-            this.value1.Size = new System.Drawing.Size(335, 22);
-            this.value1.TabIndex = 2;
-            this.value1.TextChanged += new System.EventHandler(this.textBox2_TextChanged);
-            // 
-            // value2
-            // 
-            this.value2.Location = new System.Drawing.Point(210, 50);
-            this.value2.Name = "value2";
-            this.value2.Size = new System.Drawing.Size(335, 22);
-            this.value2.TabIndex = 3;
-            // 
-            // result
-            // 
-            this.result.Location = new System.Drawing.Point(210, 78);
-            this.result.Name = "result";
-            this.result.Size = new System.Drawing.Size(335, 22);
-            this.result.TabIndex = 4;
-            // 
-            // calculate
-            // 
-            this.calculate.BackColor = System.Drawing.SystemColors.ActiveCaption;
-            this.calculate.Location = new System.Drawing.Point(571, 12);
-            this.calculate.Name = "calculate";
-            this.calculate.Size = new System.Drawing.Size(192, 60);
-            this.calculate.TabIndex = 5;
-            this.calculate.Text = "Calcola";
-            this.calculate.UseVisualStyleBackColor = false;
-            this.calculate.Click += new System.EventHandler(this.button2_Click);
-            // 
             // groupBox1
             // 
+            this.groupBox1.Controls.Add(this.label2);
+            this.groupBox1.Controls.Add(this.label1);
             this.groupBox1.Controls.Add(this.txtResult);
             this.groupBox1.Controls.Add(this.txtVal2);
             this.groupBox1.Controls.Add(this.txtVal1);
             this.groupBox1.Controls.Add(this.operazioni);
             this.groupBox1.Controls.Add(this.execute);
-            this.groupBox1.Location = new System.Drawing.Point(95, 133);
+            this.groupBox1.Location = new System.Drawing.Point(12, 12);
             this.groupBox1.Name = "groupBox1";
-            this.groupBox1.Size = new System.Drawing.Size(678, 241);
+            this.groupBox1.Size = new System.Drawing.Size(776, 407);
             this.groupBox1.TabIndex = 6;
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "OPERAZIONI";
@@ -128,9 +73,9 @@ namespace f01_form
             // execute
             // 
             this.execute.BackColor = System.Drawing.SystemColors.ActiveCaption;
-            this.execute.Location = new System.Drawing.Point(356, 21);
+            this.execute.Location = new System.Drawing.Point(510, 8);
             this.execute.Name = "execute";
-            this.execute.Size = new System.Drawing.Size(237, 115);
+            this.execute.Size = new System.Drawing.Size(237, 175);
             this.execute.TabIndex = 6;
             this.execute.Text = "Calcola";
             this.execute.UseVisualStyleBackColor = false;
@@ -146,6 +91,7 @@ namespace f01_form
             this.rdbDiv.TabStop = true;
             this.rdbDiv.Text = "/";
             this.rdbDiv.UseVisualStyleBackColor = true;
+            this.rdbDiv.Click += new System.EventHandler(this.ChooseOperation);
             // 
             // rdbMul
             // 
@@ -157,6 +103,7 @@ namespace f01_form
             this.rdbMul.TabStop = true;
             this.rdbMul.Text = "*";
             this.rdbMul.UseVisualStyleBackColor = true;
+            this.rdbMul.Click += new System.EventHandler(this.ChooseOperation);
             // 
             // rdbSub
             // 
@@ -168,6 +115,7 @@ namespace f01_form
             this.rdbSub.TabStop = true;
             this.rdbSub.Text = "-";
             this.rdbSub.UseVisualStyleBackColor = true;
+            this.rdbSub.Click += new System.EventHandler(this.ChooseOperation);
             // 
             // rdbSum
             // 
@@ -179,6 +127,7 @@ namespace f01_form
             this.rdbSum.TabStop = true;
             this.rdbSum.Text = "+";
             this.rdbSum.UseVisualStyleBackColor = true;
+            this.rdbSum.Click += new System.EventHandler(this.ChooseOperation);
             // 
             // operazioni
             // 
@@ -196,24 +145,43 @@ namespace f01_form
             // txtResult
             // 
             this.txtResult.Enabled = false;
-            this.txtResult.Location = new System.Drawing.Point(225, 104);
+            this.txtResult.Location = new System.Drawing.Point(322, 115);
             this.txtResult.Name = "txtResult";
             this.txtResult.Size = new System.Drawing.Size(107, 22);
             this.txtResult.TabIndex = 10;
             // 
             // txtVal2
             // 
-            this.txtVal2.Location = new System.Drawing.Point(225, 76);
+            this.txtVal2.Location = new System.Drawing.Point(322, 76);
             this.txtVal2.Name = "txtVal2";
             this.txtVal2.Size = new System.Drawing.Size(107, 22);
             this.txtVal2.TabIndex = 9;
             // 
             // txtVal1
             // 
-            this.txtVal1.Location = new System.Drawing.Point(225, 48);
+            this.txtVal1.Location = new System.Drawing.Point(322, 21);
             this.txtVal1.Name = "txtVal1";
             this.txtVal1.Size = new System.Drawing.Size(107, 22);
             this.txtVal1.TabIndex = 8;
+            // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.Location = new System.Drawing.Point(280, 22);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(81, 17);
+            this.label1.TabIndex = 11;
+            this.label1.Text = "Operatore1";
+            this.label1.Click += new System.EventHandler(this.label1_Click);
+            // 
+            // label2
+            // 
+            this.label2.AutoSize = true;
+            this.label2.Location = new System.Drawing.Point(235, 76);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(81, 17);
+            this.label2.TabIndex = 12;
+            this.label2.Text = "Operatore1";
             // 
             // Form1
             // 
@@ -221,12 +189,6 @@ namespace f01_form
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
             this.Controls.Add(this.groupBox1);
-            this.Controls.Add(this.calculate);
-            this.Controls.Add(this.result);
-            this.Controls.Add(this.value2);
-            this.Controls.Add(this.value1);
-            this.Controls.Add(this.textBox1);
-            this.Controls.Add(this.button1);
             this.Name = "Form1";
             this.Text = "rec";
             this.groupBox1.ResumeLayout(false);
@@ -234,19 +196,11 @@ namespace f01_form
             this.operazioni.ResumeLayout(false);
             this.operazioni.PerformLayout();
             this.ResumeLayout(false);
-            this.PerformLayout();
 
         }
 
         #endregion
-
-        private System.Windows.Forms.Button button1;
-        private System.Windows.Forms.TextBox textBox1;
         private System.Windows.Forms.ContextMenuStrip contextMenuStrip1;
-        private System.Windows.Forms.TextBox value1;
-        private System.Windows.Forms.TextBox value2;
-        private System.Windows.Forms.TextBox result;
-        private System.Windows.Forms.Button calculate;
         private System.Windows.Forms.GroupBox groupBox1;
         private System.Windows.Forms.RadioButton rdbMul;
         private System.Windows.Forms.RadioButton rdbSub;
@@ -257,6 +211,8 @@ namespace f01_form
         private System.Windows.Forms.TextBox txtVal2;
         private System.Windows.Forms.TextBox txtVal1;
         private System.Windows.Forms.GroupBox operazioni;
+        private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.Label label2;
     }
 }
 
