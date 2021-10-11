@@ -1,0 +1,7 @@
+C:\PROJECTS\CSHARP\CORSO-C-SHARP\f01_form\ES_01\bin\Debug\ES_01.exe.config
+C:\PROJECTS\CSHARP\CORSO-C-SHARP\f01_form\ES_01\bin\Debug\ES_01.exe
+C:\PROJECTS\CSHARP\CORSO-C-SHARP\f01_form\ES_01\bin\Debug\ES_01.pdb
+C:\PROJECTS\CSHARP\CORSO-C-SHARP\f01_form\ES_01\obj\Debug\ES_01.csproj.AssemblyReference.cache
+C:\PROJECTS\CSHARP\CORSO-C-SHARP\f01_form\ES_01\obj\Debug\ES_01.csproj.CoreCompileInputs.cache
+C:\PROJECTS\CSHARP\CORSO-C-SHARP\f01_form\ES_01\obj\Debug\ES_01.exe
+C:\PROJECTS\CSHARP\CORSO-C-SHARP\f01_form\ES_01\obj\Debug\ES_01.pdb
