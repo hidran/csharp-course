@@ -53,8 +53,17 @@
     <Compile Include="AdoNet.Designer.cs">
       <DependentUpon>AdoNet.cs</DependentUpon>
     </Compile>
+    <Compile Include="AdoDetail.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AdoDetail.Designer.cs">
+      <DependentUpon>AdoDetail.cs</DependentUpon>
+    </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="AdoDetail.resx">
+      <DependentUpon>AdoDetail.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="AdoNet.resx">
       <DependentUpon>AdoNet.cs</DependentUpon>
     </EmbeddedResource>

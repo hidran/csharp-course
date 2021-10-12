@@ -22,10 +22,11 @@ namespace ES06_AdoNet
 
         private void CaricaProdotto_Click(object sender, EventArgs e)
         {
+            SqlConnection cn = new SqlConnection(ConfigurationManager.ConnectionStrings["strCon"].ConnectionString);
+
             try
             {
                // string connStr = "Data Source=(localdb)\\MSSQLLocalDB; Initial Catalog=Northwind; Integrated Security= True";
-                SqlConnection cn = new SqlConnection(ConfigurationManager.ConnectionStrings["strCon"].ConnectionString);
                 SqlCommand cmd = new SqlCommand("SELECT * FROM dbo.Products", cn);
                 SqlDataAdapter da = new SqlDataAdapter(cmd);
                 DataTable dt = new DataTable();
@@ -40,8 +41,20 @@ namespace ES06_AdoNet
             {
                 MessageBox.Show(ex.Message);
             }
+            finally
+            {
+                if(cn.State == ConnectionState.Open)
+                {
+                    cn.Close();
+                }
+            }
 
+        }
 
+        private void ShowDetail_Click(object sender, EventArgs e)
+        {
+            var f = new AdoDetail();
+            f.Show();
         }
     }
 }

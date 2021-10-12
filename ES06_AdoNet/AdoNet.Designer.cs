@@ -31,6 +31,7 @@ namespace ES06_AdoNet
         {
             this.CaricaProdotto = new System.Windows.Forms.Button();
             this.dataProductsGridView = new System.Windows.Forms.DataGridView();
+            this.btnShowDetail = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.dataProductsGridView)).BeginInit();
             this.SuspendLayout();
             // 
@@ -38,7 +39,7 @@ namespace ES06_AdoNet
             // 
             this.CaricaProdotto.Location = new System.Drawing.Point(31, 13);
             this.CaricaProdotto.Name = "CaricaProdotto";
-            this.CaricaProdotto.Size = new System.Drawing.Size(75, 23);
+            this.CaricaProdotto.Size = new System.Drawing.Size(152, 38);
             this.CaricaProdotto.TabIndex = 0;
             this.CaricaProdotto.Text = "Carica Prodotti";
             this.CaricaProdotto.UseVisualStyleBackColor = true;
@@ -54,11 +55,22 @@ namespace ES06_AdoNet
             this.dataProductsGridView.Size = new System.Drawing.Size(1207, 505);
             this.dataProductsGridView.TabIndex = 1;
             // 
+            // btnShowDetail
+            // 
+            this.btnShowDetail.Location = new System.Drawing.Point(1063, 13);
+            this.btnShowDetail.Name = "btnShowDetail";
+            this.btnShowDetail.Size = new System.Drawing.Size(166, 38);
+            this.btnShowDetail.TabIndex = 2;
+            this.btnShowDetail.Text = "Show Form detail";
+            this.btnShowDetail.UseVisualStyleBackColor = true;
+            this.btnShowDetail.Click += new System.EventHandler(this.ShowDetail_Click);
+            // 
             // AdoNet
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1231, 574);
+            this.Controls.Add(this.btnShowDetail);
             this.Controls.Add(this.dataProductsGridView);
             this.Controls.Add(this.CaricaProdotto);
             this.Name = "AdoNet";
@@ -72,6 +84,7 @@ namespace ES06_AdoNet
 
         private System.Windows.Forms.Button CaricaProdotto;
         private System.Windows.Forms.DataGridView dataProductsGridView;
+        private System.Windows.Forms.Button btnShowDetail;
     }
 }
 
