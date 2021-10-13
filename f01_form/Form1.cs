@@ -47,8 +47,8 @@ namespace f01_form
         {
             try
             {
-                double res = Somma(Convert.ToDouble(value1.Text), Convert.ToDouble(value2.Text));
-                result.Text = res.ToString();
+                double res = Somma(Convert.ToDouble(txtVal1.Text), Convert.ToDouble(txtVal2.Text));
+                txtResult.Text = res.ToString();
             }
             catch (FormatException ex)
             {
@@ -117,6 +117,11 @@ namespace f01_form
         }
 
         private void label1_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void Form1_Load(object sender, EventArgs e)
         {
 
         }

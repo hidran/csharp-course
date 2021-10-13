@@ -17,6 +17,10 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ES06_Class_Library_Client",
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ES06_AdoNet", "ES06_AdoNet\ES06_AdoNet.csproj", "{0ECF0808-9E0B-4A19-818A-CF097E811819}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ES08_EntityFramework", "ES08_EntityFramework\ES08_EntityFramework.csproj", "{FF02DD6D-1EA1-4F31-836E-D4FFB58C2493}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "S09_Entityframework_codefirst", "S09_Entityframework_codefirst\S09_Entityframework_codefirst.csproj", "{D6194A6D-5854-4DEB-BD5A-4E1B81F453CD}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -51,6 +55,14 @@ Global
 		{0ECF0808-9E0B-4A19-818A-CF097E811819}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{0ECF0808-9E0B-4A19-818A-CF097E811819}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{0ECF0808-9E0B-4A19-818A-CF097E811819}.Release|Any CPU.Build.0 = Release|Any CPU
+		{FF02DD6D-1EA1-4F31-836E-D4FFB58C2493}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{FF02DD6D-1EA1-4F31-836E-D4FFB58C2493}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{FF02DD6D-1EA1-4F31-836E-D4FFB58C2493}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{FF02DD6D-1EA1-4F31-836E-D4FFB58C2493}.Release|Any CPU.Build.0 = Release|Any CPU
+		{D6194A6D-5854-4DEB-BD5A-4E1B81F453CD}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D6194A6D-5854-4DEB-BD5A-4E1B81F453CD}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D6194A6D-5854-4DEB-BD5A-4E1B81F453CD}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D6194A6D-5854-4DEB-BD5A-4E1B81F453CD}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
