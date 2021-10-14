@@ -75,6 +75,7 @@ namespace ES06_AdoNet
             this.Controls.Add(this.CaricaProdotto);
             this.Name = "AdoNet";
             this.Text = "Form1";
+            this.Load += new System.EventHandler(this.AdoNet_Load);
             ((System.ComponentModel.ISupportInitialize)(this.dataProductsGridView)).EndInit();
             this.ResumeLayout(false);
 

@@ -7,4 +7,3 @@ C:\PROJECTS\CSHARP\CORSO-C-SHARP\f01_form\f01_form\obj\Debug\f01_form.csproj.Gen
 C:\PROJECTS\CSHARP\CORSO-C-SHARP\f01_form\f01_form\obj\Debug\f01_form.csproj.CoreCompileInputs.cache
 C:\PROJECTS\CSHARP\CORSO-C-SHARP\f01_form\f01_form\obj\Debug\f01_form.exe
 C:\PROJECTS\CSHARP\CORSO-C-SHARP\f01_form\f01_form\obj\Debug\f01_form.pdb
-C:\PROJECTS\CSHARP\CORSO-C-SHARP\f01_form\f01_form\obj\Debug\f01_form.csproj.AssemblyReference.cache

@@ -56,5 +56,10 @@ namespace ES06_AdoNet
             var f = new AdoDetail();
             f.Show();
         }
+
+        private void AdoNet_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }
