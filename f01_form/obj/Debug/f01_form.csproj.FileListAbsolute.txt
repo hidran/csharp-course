@@ -1,7 +1,6 @@
 C:\PROJECTS\CSHARP\CORSO-C-SHARP\f01_form\f01_form\bin\Debug\f01_form.exe.config
 C:\PROJECTS\CSHARP\CORSO-C-SHARP\f01_form\f01_form\bin\Debug\f01_form.exe
 C:\PROJECTS\CSHARP\CORSO-C-SHARP\f01_form\f01_form\bin\Debug\f01_form.pdb
-C:\PROJECTS\CSHARP\CORSO-C-SHARP\f01_form\f01_form\obj\Debug\f01_form.csproj.AssemblyReference.cache
 C:\PROJECTS\CSHARP\CORSO-C-SHARP\f01_form\f01_form\obj\Debug\f01_form.Form1.resources
 C:\PROJECTS\CSHARP\CORSO-C-SHARP\f01_form\f01_form\obj\Debug\f01_form.Properties.Resources.resources
 C:\PROJECTS\CSHARP\CORSO-C-SHARP\f01_form\f01_form\obj\Debug\f01_form.csproj.GenerateResource.cache
